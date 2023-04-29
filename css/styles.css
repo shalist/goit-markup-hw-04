@@ -330,7 +330,6 @@ address {
 .company-title {
   line-height: 1.1;
 }
-
 /**
   |============================
   | SECTION 4
@@ -363,28 +362,6 @@ address {
 .card-text {
   margin-bottom: 8px;
 }
-.team-social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-.team-social-item {
-  width: 40px;
-  height: 40px;
-}
-.team-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-.team-social-icon {
-  fill: var(--primary-bg-color);
-}
 
 /**
   |============================
@@ -415,12 +392,14 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--company-icon);
   fill: var(--company-icon);
   border: 1px solid var(--company-icon);
   border-radius: 4px;
 }
 .company-link:hover,
 .company-link:focus {
+  color: var(--hover-focus-color);
   fill: var(--hover-focus-color);
   border-color: var(--hover-focus-color);
 }

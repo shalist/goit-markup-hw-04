@@ -534,7 +534,7 @@ address {
   width: calc((100% - 48px) / 3);
 }
 .portfolio-descruption {
-  max-width: 360px;
+  min-width: 360px;
   border: 1px solid var(--button-border);
   border-top: none;
   padding-top: 32px;
@@ -542,11 +542,12 @@ address {
   padding-bottom: 32px;
   padding-left: 16px;
 }
-/* .portfolio-link {
+.portfolio-link {
   display: block;
-} */
-.portfolio-item:hover,
-.portfolio-item:focus {
+  min-width: 360px;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }

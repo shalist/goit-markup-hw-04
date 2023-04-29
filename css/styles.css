@@ -413,7 +413,6 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .footer-element {
   background-color: var(--dark-accent);
@@ -427,6 +426,7 @@ address {
 }
 .footer-block {
   max-width: 264px;
+  margin-right: 120px;
 }
 .footer-block > .link {
   display: inline-block;
@@ -534,6 +534,7 @@ address {
   width: calc((100% - 48px) / 3);
 }
 .portfolio-descruption {
+  max-width: 360px;
   border: 1px solid var(--button-border);
   border-top: none;
   padding-top: 32px;
@@ -541,6 +542,9 @@ address {
   padding-bottom: 32px;
   padding-left: 16px;
 }
+/* .portfolio-link {
+  display: block;
+} */
 .portfolio-item:hover,
 .portfolio-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),

@@ -14,6 +14,8 @@
   --button-border: #e7e9fc;
 
   --company-icon: #8e8f99;
+
+  --footer-hover-focus: #31d0aa;
 }
 
 /**
@@ -213,6 +215,7 @@ address {
     url(../images/header/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .hero-title {
   max-width: 496px;
@@ -315,7 +318,7 @@ address {
   width: calc(100% - 3 * 16px) / 3;
 }
 .title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   color: var(--dark-accent);
   font-weight: 700;
   font-size: 36px;
@@ -323,6 +326,9 @@ address {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.company-title {
+  line-height: 1.1;
 }
 
 /**
@@ -409,12 +415,14 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--company-icon);
   border: 1px solid var(--company-icon);
   border-radius: 4px;
 }
-
-.company-icon {
-  fill: var(--company-icon);
+.company-link:hover,
+.company-link:focus {
+  fill: var(--hover-focus-color);
+  border-color: var(--hover-focus-color);
 }
 
 /**
@@ -425,6 +433,7 @@ address {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
   gap: 120px;
 }
 .footer-element {
@@ -479,9 +488,19 @@ address {
   border-radius: 50%;
 }
 .social-icon {
-  fill: var(--primary-bg-color);
+  fill: var(--light-accent);
 }
-
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--hover-focus-color);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--footer-hover-focus);
+}
+.footer-social {
+  gap: 16px;
+}
 /**
   |============================
   | PORTFOLIO
@@ -543,8 +562,8 @@ address {
   padding-bottom: 32px;
   padding-left: 16px;
 }
-.portfolio-descruption:hover,
-.portfolio-descruption:focus {
+.portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
